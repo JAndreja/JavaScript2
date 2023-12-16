@@ -3,13 +3,13 @@
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 const doubledNumbers = numbers.map((x) => x * 2);
-console.log(doubledNumbers);
+//console.log(doubledNumbers);
 
 // Same with forEach
 
 const newnumber = [];
 numbers.forEach((x) => newnumber.push(x + 2));
-console.log(newnumber);
+//console.log(newnumber);
 
 const companies = [
   { name: "Company One", category: "Finance", start: 1981, end: 2004 },
@@ -29,19 +29,20 @@ const companyNames = companies.map((company) => company.name);
 console.log(companyNames);
 
 // Create an array with just company and category
-
+// return array
 const companyInfo = companies.map((company) => {
   return `${company.name}:${company.category}`;
 });
-console.log(companyInfo);
+console.log("Arrary:", companyInfo);
 
+// return array of objects
 const companyInfo2 = companies.map((company) => {
   return {
     name: company.name,
     category: company.category,
   };
 });
-console.log(companyInfo2);
+console.log("Arrary of objects:", companyInfo2);
 
 // Create an array of objects with the name and the length of each company in years
 
@@ -51,14 +52,14 @@ const companyYears = companies.map((company) => {
     years: `${company.end - company.start} years`,
   };
 });
-console.log(companyYears);
+console.log("Arrary of objects:", companyYears);
 
 // Chain map methods
 
 const squareAndDouble = numbers
   .map((number) => Math.sqrt(number))
   .map((sqrt) => sqrt * 2);
-console.log(squareAndDouble);
+//console.log(squareAndDouble);
 
 const squareAndDouble2 = numbers
   .map(function (number) {
@@ -70,11 +71,11 @@ const squareAndDouble2 = numbers
   .map(function (sqrtDoubled) {
     return sqrtDoubled * 3;
   });
-console.log(squareAndDouble2);
+//console.log(squareAndDouble2);
 
 // Chaining different methods
 const evenDouble = numbers
   .filter((number) => number % 2 === 0)
   .map((number) => number * 2);
 
-console.log(evenDouble);
+//console.log(evenDouble);
