@@ -9,7 +9,11 @@ for (const item of items) {
   console.log(item);
 }
 
-const users = [{ name: "Andreja" }, { name: "Radica" }, { name: "Kaja" }];
+const users = [
+  { name: "Andreja", age: 47 },
+  { name: "Radica", age: 42 },
+  { name: "Kaja", age: 12 },
+];
 
 for (const user of users) {
   console.log(user.name);

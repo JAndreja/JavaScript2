@@ -12,7 +12,8 @@ const colorObj = {
 };
 
 for (const key in colorObj) {
-  console.log(colorObj[key]);
+  console.log(colorObj[key]); // iterate over all color and print there names
+  console.log(colorObj.color2); // print only color2
 }
 
 // Loop through arrays
@@ -20,4 +21,5 @@ const colorArr = ["red", "green", "blue", "yellow"];
 
 for (const key in colorArr) {
   console.log(colorArr[key]);
+  console.log(colorArr[1]);
 }
