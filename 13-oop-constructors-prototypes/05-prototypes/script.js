@@ -1,3 +1,5 @@
+"use strict";
+
 function Rectangle(name, width, height) {
   this.name = name;
   this.width = width;
@@ -7,4 +9,8 @@ function Rectangle(name, width, height) {
   };
 }
 
-const rect = new Rectangle('Rect', 10, 10);
+const rect = new Rectangle("Rect", 10, 10);
+console.log(rect);
+
+// To get the prototype of an object
+console.log(Object.getPrototypeOf(rect));
