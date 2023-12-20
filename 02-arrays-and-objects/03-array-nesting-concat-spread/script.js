@@ -29,5 +29,19 @@ console.log(j);
 const arr = [1, 2, [3, 4], 5, [6, 7], 8];
 console.log(arr);
 
-const x = arr.flat();
-console.log(x);
+const k = arr.flat();
+console.log(k);
+
+// Static Methods on Array Object
+
+const l = Array.isArray(fruits);
+console.log(l);
+
+const m = Array.from("12345");
+console.log(m);
+
+const a = 1;
+const b = 2;
+const c = 3;
+const n = Array.of(a, b, c);
+console.log(n);
