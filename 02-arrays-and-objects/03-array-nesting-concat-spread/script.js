@@ -17,9 +17,17 @@ const berries = ["strawberry", "blueberry", "rasberry"];
 // console.log(y);
 // console.log(y[3]);
 
-// // spred operator (...)
+// spred operator (...)
 
 let z = [...fruits, ...berries];
 console.log(z);
 let j = [...fruits, berries];
 console.log(j);
+
+// Flatten Arrays
+
+const arr = [1, 2, [3, 4], 5, [6, 7], 8];
+console.log(arr);
+
+const x = arr.flat();
+console.log(x);
