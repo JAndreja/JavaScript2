@@ -36,3 +36,19 @@ const {
   user: { name },
 } = todo;
 console.log(name);
+
+// destructuring array
+
+const numbers = [2, 3, 5, 67, 82, 120];
+
+const [a, b, c] = numbers;
+console.log(a, b, c);
+
+// skip one value
+const [e, g, , l] = numbers;
+console.log(e, g, l);
+
+// rest operator
+
+const [one, two, ...nums] = numbers; //  here we take the rest of the numbers
+console.log(one, two, ...nums); // here we spread as one array
