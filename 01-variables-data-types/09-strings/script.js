@@ -12,24 +12,24 @@ x = `Hello, my name is ${name} and I am ${age} years old`;
 // String Properties and Methods
 
 // Creating a "string object" (JS does this automatically when using a propery or method on a primitive string)
-const s = new String("Hello World");
+const s = new String("hello world");
 
 x = typeof s;
-
+console.log(x);
 x = s.length;
-
-// Access value by key
-x = s[0];
+console.log(x);
 
 // Shows the prototype of the string object. Shows the properties and methods
 x = s.__proto__;
+console.log(x);
 
 // Change case
 x = s.toUpperCase();
 x = s.toLowerCase();
 
 // charAt() - returns the character at the specified index
-x = s.charAt(0);
+x = `${s.charAt(0).toUpperCase()}${s.slice(1)}`;
+console.log(x);
 
 // indexOf - returns the index of the first occurrence of a specified value in a string
 x = s.indexOf("d");
@@ -56,5 +56,3 @@ x = s.valueOf();
 
 // split() - returns an array of strings
 x = s.split("");
-
-console.log(x);
