@@ -1,6 +1,6 @@
 "use strict";
 
-//for/of - loops through the values of an iterable object
+//for/of - is specifically designed for iterating over iterable objects like arrays, strings, etc
 
 // Loop through arrays
 const items = ["book", "table", "chair", "kite"];
@@ -16,7 +16,11 @@ const users = [
 ];
 
 for (const user of users) {
-  console.log(user.name);
+  console.log(user, typeof user);
+}
+
+for (const user of users) {
+  console.log(user.name, typeof user.name);
 }
 
 // Loop over strings
@@ -33,6 +37,7 @@ for (const s of name) {
 const map = new Map();
 map.set("name", "John");
 map.set("age", 30);
+console.log(map);
 
 for (const [key, value] of map) {
   console.log(key, value);

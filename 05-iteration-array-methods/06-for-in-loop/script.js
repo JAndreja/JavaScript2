@@ -1,6 +1,6 @@
 "use strict";
 
-//for/in - loops through the properties of an object
+//for/in - is typically used to iterate over the properties of an object
 
 // Loop through objects
 
@@ -21,5 +21,5 @@ const colorArr = ["red", "green", "blue", "yellow"];
 
 for (const key in colorArr) {
   console.log(colorArr[key]);
-  console.log(colorArr[1]);
+  //console.log(colorArr[1]);
 }
