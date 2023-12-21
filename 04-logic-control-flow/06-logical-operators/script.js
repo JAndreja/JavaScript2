@@ -2,7 +2,7 @@
 console.log(10 < 20 && 30 > 15 && 40 > 30); // Must all be true
 console.log(10 > 20 || 30 < 15); // Only one has to be true
 
-// && - Will return first falsy value or the last value
+// &&(AND) - Will return first falsy value or the last value
 let a;
 
 a = 10 && 20;
@@ -15,7 +15,7 @@ console.log(a);
 const posts = ["Post One", "Post Two"];
 posts.length > 0 && console.log(posts[0]);
 
-// || - Will return the first truthy value or the last value
+// || (OR) - Will return the first truthy value or the last value
 
 let b;
 
