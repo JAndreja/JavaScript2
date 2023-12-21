@@ -1,5 +1,5 @@
 "use strict";
-// IFFE Syntax (Has it's own scope and runs right away)
+// IIFE Syntax (Has it's own scope and runs right away)
 (function () {
   const user = "John";
   console.log(user);

@@ -9,6 +9,7 @@ function greetUser(user) {
 greetUser("Andreja");
 greetUser(user);
 
+// Default params
 function greetUser1(user = "Bot") {
   console.log(`Hello ${user}`);
 }
@@ -46,3 +47,13 @@ console.log(
     name: "Radica",
   })
 );
+
+// Arrays as params
+
+function getRandom(arr) {
+  const randomIndex = Math.floor(Math.random() * arr.length);
+  const item = arr[randomIndex];
+  console.log(item);
+}
+
+getRandom([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);

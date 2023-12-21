@@ -1,4 +1,5 @@
 "use strict";
+
 function SayHello() {
   console.log("Hello world");
 }
