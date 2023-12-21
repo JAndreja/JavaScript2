@@ -1,5 +1,5 @@
 "use strict";
-
+/*
 //for/of - is specifically designed for iterating over iterable objects like arrays, strings, etc
 
 // Loop through arrays
@@ -42,3 +42,4 @@ console.log(map);
 for (const [key, value] of map) {
   console.log(key, value);
 }
+*/
