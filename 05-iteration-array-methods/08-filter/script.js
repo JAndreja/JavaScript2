@@ -5,12 +5,12 @@ const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 const evenNumbers = numbers.filter(function (number) {
   return number % 2 === 0;
 });
+console.log(evenNumbers);
 
 // short way
 const evenNumbers2 = numbers.filter((number) => {
   return number % 2 === 0;
 });
-console.log(evenNumbers);
 console.log(evenNumbers2);
 
 // Same with forEach
@@ -37,18 +37,17 @@ const companies = [
 
 // Get only retail companies
 
-//console.log(companies);
-const retailCompanies = companies.filter((company) => {
-  return company.category === "Retail";
-});
+const retailCompanies = companies.filter(
+  (company) => company.category === "Retail"
+);
 
 console.log(retailCompanies);
 
 // Get companies that started in or after 1980 and ended in or before 2005
 
-const earlyCompanies = companies.filter((company) => {
-  return company.start >= 1980 && company.end <= 2005;
-});
+const earlyCompanies = companies.filter(
+  (company) => company.start >= 1980 && company.end <= 2005
+);
 
 console.log(earlyCompanies);
 

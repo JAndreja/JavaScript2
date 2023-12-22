@@ -25,9 +25,11 @@ const socials = ["Twitter", "LinkedIn", "Facebook", "Instagram"];
 // function logSocials(social) {
 //   console.log(social);
 // }
+// logSocials(socials);
 // socials.forEach(logSocials);
 
 // Array of objects
+
 const socialObjs = [
   { name: "Twitter", url: "https://twitter.com" },
   { name: "Facebook", url: "https://facebook.com" },
@@ -38,3 +40,21 @@ const socialObjs = [
 socialObjs.forEach((item) => console.log(item));
 socialObjs.forEach((item) => console.log(item.name));
 socialObjs.forEach((item) => console.log(item.url));
+
+///////////////////////////////
+const numbers = [10, 15, 40];
+let sum = 0;
+
+numbers.forEach(sumOfAll);
+
+function sumOfAll(number) {
+  sum += number;
+}
+
+console.log(sum);
+
+/////////////////////////////////////////
+
+let students = ["John", "Sara", "Jack"];
+
+students.forEach((student) => console.log(student));

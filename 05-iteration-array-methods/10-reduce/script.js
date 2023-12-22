@@ -6,8 +6,10 @@ const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const sum = numbers.reduce(function (accumulator, currentValue) {
   return accumulator + currentValue;
 }, 0);
+console.log(sum);
 
 const sum2 = numbers.reduce((acc, cur) => acc + cur, 0);
+console.log(sum2);
 
 // Using a for loop
 const sum3 = () => {
@@ -17,6 +19,7 @@ const sum3 = () => {
   }
   return acc;
 };
+console.log(sum3(numbers));
 
 // Shopping cart example (objects)
 const cart = [
