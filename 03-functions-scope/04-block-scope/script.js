@@ -8,7 +8,7 @@ if (true) {
   console.log(x + y);
 }
 
-// console.log(y); // ReferenceError: y is not defined
+//console.log(y); // ReferenceError: y is not defined
 
 // A loop is a block
 for (let i = 0; i <= 10; i++) {
