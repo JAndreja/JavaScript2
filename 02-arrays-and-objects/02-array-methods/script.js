@@ -23,10 +23,10 @@ const array = [12, 30, 25, 45, 78, 300];
 // array.reverse();
 // console.log(array);
 
-x = array.includes(100);
-console.log(x);
-x = array.indexOf(30);
-console.log(x);
+// x = array.includes(100);
+// console.log(x);
+// x = array.indexOf(30);
+// console.log(x);
 
 //Returns a copy of a section of an array
 // let sliceArr = array.slice(1, 6);
@@ -40,6 +40,7 @@ console.log(x);
 // console.log(array);
 
 // CHAIN METHODS
-x = array.splice(1, 4).reverse().toString();
+// x = array.splice(1, 4).reverse().toString();
 
-console.log(x, array);
+// console.log(x, array);
+
