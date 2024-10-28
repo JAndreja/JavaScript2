@@ -20,5 +20,5 @@ function calculator(num1, num2, operator) {
   }
 }
 
-const calc = calculator(10, 4, "");
+const calc = calculator(10, 4, "/");
 console.log(calc);
