@@ -1,6 +1,6 @@
 "use strict";
 
-const socials = ["Twitter", "LinkedIn", "Facebook", "Instagram"];
+//const socials = ["Twitter", "LinkedIn", "Facebook", "Instagram"];
 
 // Long form
 
@@ -30,31 +30,31 @@ const socials = ["Twitter", "LinkedIn", "Facebook", "Instagram"];
 
 // Array of objects
 
-const socialObjs = [
-  { name: "Twitter", url: "https://twitter.com" },
-  { name: "Facebook", url: "https://facebook.com" },
-  { name: "Linkedin", url: "https://linkedin.com" },
-  { name: "Instagram", url: "https://instagram.com" },
-];
+// const socialObjs = [
+//   { name: "Twitter", url: "https://twitter.com" },
+//   { name: "Facebook", url: "https://facebook.com" },
+//   { name: "Linkedin", url: "https://linkedin.com" },
+//   { name: "Instagram", url: "https://instagram.com" },
+// ];
 
-socialObjs.forEach((item) => console.log(item));
-socialObjs.forEach((item) => console.log(item.name));
-socialObjs.forEach((item) => console.log(item.url));
+// socialObjs.forEach((item) => console.log(item));
+// socialObjs.forEach((item) => console.log(item.name));
+// socialObjs.forEach((item) => console.log(item.url));
 
 ///////////////////////////////
-const numbers = [10, 15, 40];
-let sum = 0;
+// const numbers = [10, 15, 40];
+// let sum = 0;
 
-numbers.forEach(sumOfAll);
+// numbers.forEach(sumOfAll);
 
-function sumOfAll(number) {
-  sum += number;
-}
+// function sumOfAll(number) {
+//   sum += number;
+// }
 
-console.log(sum);
+// console.log(sum);
 
 /////////////////////////////////////////
 
-let students = ["John", "Sara", "Jack"];
+// let students = ["John", "Sara", "Jack"];
 
-students.forEach((student) => console.log(student));
+// students.forEach((student) => console.log(student));

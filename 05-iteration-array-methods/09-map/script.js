@@ -1,15 +1,20 @@
 "use strict";
 
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// Purpose: Transforms each element in an array and returns a new array with the transformed elements.
+// Returns: A new array of the same length as the original.
+// Use Case: When you want to apply a function to each element in an array to create a new array based on the results. 
 
-const doubledNumbers = numbers.map((x) => x * 2);
-//console.log(doubledNumbers);
 
-// Same with forEach
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-const newnumber = [];
-numbers.forEach((x) => newnumber.push(x + 2));
-//console.log(newnumber);
+// const doubledNumbers = numbers.map((x) => x * 2);
+// console.log(doubledNumbers);
+
+// // Same with forEach
+
+// const newnumber = [];
+// numbers.forEach((x) => newnumber.push(x + 2));
+// console.log(newnumber);
 
 const companies = [
   { name: "Company One", category: "Finance", start: 1981, end: 2004 },
@@ -23,59 +28,59 @@ const companies = [
   { name: "Company Nine", category: "Retail", start: 1981, end: 1989 },
 ];
 
-// Create an array of company names
+// // Create an array of company names
 
-const companyNames = companies.map((company) => company.name);
-console.log(companyNames);
+// const companyNames = companies.map((company) => company.name);
+// console.log(companyNames);
 
-// Create an array with just company and category
-// return array
-const companyInfo = companies.map((company) => {
-  return `${company.name}:${company.category}`;
-});
-console.log("Arrary:", companyInfo);
+// // Create an array with just company and category
+// // return array
+// const companyInfo = companies.map((company) => {
+//   return `${company.name}:${company.category}`;
+// });
+// console.log("Arrary:", companyInfo);
 
-// return array of objects
-const companyInfo2 = companies.map((company) => {
-  return {
-    name: company.name,
-    category: company.category,
-  };
-});
-console.log("Arrary of objects:", companyInfo2);
+// // return array of objects
+// const companyInfo2 = companies.map((company) => {
+//   return {
+//     name: company.name,
+//     category: company.category,
+//   };
+// });
+// console.log("Arrary of objects:", companyInfo2);
 
-// Create an array of objects with the name and the length of each company in years
+// // Create an array of objects with the name and the length of each company in years
 
-const companyYears = companies.map((company) => {
-  return {
-    name: company.name,
-    years: `${company.end - company.start} years`,
-  };
-});
-console.log("Arrary of objects:", companyYears);
+// const companyYears = companies.map((company) => {
+//   return {
+//     name: company.name,
+//     years: `${company.end - company.start} years`,
+//   };
+// });
+// console.log("Arrary of objects:", companyYears);
 
-// Chain map methods
+// // Chain map methods
 
-const squareAndDouble = numbers
-  .map((number) => Math.sqrt(number))
-  .map((sqrt) => sqrt * 2);
-//console.log(squareAndDouble);
+// const squareAndDouble = numbers
+//   .map((number) => Math.sqrt(number))
+//   .map((sqrt) => sqrt * 2);
+// //console.log(squareAndDouble);
 
-const squareAndDouble2 = numbers
-  .map(function (number) {
-    return Math.sqrt(number);
-  })
-  .map(function (sqrt) {
-    return sqrt * 2;
-  })
-  .map(function (sqrtDoubled) {
-    return sqrtDoubled * 3;
-  });
-//console.log(squareAndDouble2);
+// const squareAndDouble2 = numbers
+//   .map(function (number) {
+//     return Math.sqrt(number);
+//   })
+//   .map(function (sqrt) {
+//     return sqrt * 2;
+//   })
+//   .map(function (sqrtDoubled) {
+//     return sqrtDoubled * 3;
+//   });
+// //console.log(squareAndDouble2);
 
-// Chaining different methods
-const evenDouble = numbers
-  .filter((number) => number % 2 === 0)
-  .map((number) => number * 2);
+// // Chaining different methods
+// const evenDouble = numbers
+//   .filter((number) => number % 2 === 0)
+//   .map((number) => number * 2);
 
-//console.log(evenDouble);
+// //console.log(evenDouble);
