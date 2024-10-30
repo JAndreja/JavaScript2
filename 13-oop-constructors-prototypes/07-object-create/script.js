@@ -12,6 +12,7 @@ const rectanglePrototypes = {
   },
 };
 
+console.log(rectanglePrototypes);
 function createRectangle(height, width) {
   return Object.create(rectanglePrototypes, {
     height: {
