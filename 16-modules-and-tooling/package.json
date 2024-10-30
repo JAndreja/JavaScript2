@@ -1,0 +1,14 @@
+{
+  "name": "16-modules-and-tooling",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "axios": "^1.7.7"
+  }
+}
